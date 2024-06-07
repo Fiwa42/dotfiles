@@ -1,5 +1,6 @@
 # dotfiles
 
+## Screenshots:
 ![image](https://github.com/Fiwa42/dotfiles/assets/69937337/d9e4c10b-ceb4-4d6c-bc08-0b76068a3ef7)
 
 ## Waybar:
