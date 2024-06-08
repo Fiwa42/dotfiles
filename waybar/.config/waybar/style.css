@@ -109,7 +109,8 @@ label:focus {
 }
 
 #wireplumber.muted {
-    background-color: #458588;
+    background-color: @mauve;
+    color: @base;
 }
 
 #tray > .passive {
