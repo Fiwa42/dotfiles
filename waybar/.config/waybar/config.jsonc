@@ -12,16 +12,17 @@
         "hyprland/window"
     ],
     "modules-right": [
-	"cpu",
-	"memory",
-	"temperature",
-	"custom/fan",
-	"custom/updates",
+	    "cpu",
+	    "memory",
+	    "temperature",
+	    "custom/fan",
+        "network",
+	    "custom/updates",
         "idle_inhibitor",
-	"wireplumber",
+	    "wireplumber",
         "clock",
         "tray",
-	"custom/poweroff"
+	    "custom/poweroff"
     ],
     // Modules configuration
     "hyprland/workspaces": {
@@ -113,6 +114,13 @@
         "exec-if": "[[ $(bash $HOME/.config/waybar/modules/updates.sh) != 0 ]]",
         "interval": 15,
         "on-click": "kitty yay"
+    },
+    "network": {
+        "format-ethernet": "{bandwidthDownBytes:>4} ",
+        "format-linked": "{ifname} (No IP) ",
+        "format-disconnected": "Disconnected",
+        "format-alt": "{ifname}: {ipaddr}/{cidr} ",
+        "interval": 3,
     }
 },{
     "output": ["DP-3"], //Second Monitor (vertical)
