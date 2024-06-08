@@ -1,8 +1,10 @@
 # dotfiles
 
 ## Screenshots:
-![image](https://github.com/Fiwa42/dotfiles/assets/69937337/d9e4c10b-ceb4-4d6c-bc08-0b76068a3ef7)
+![image](https://github.com/Fiwa42/dotfiles/assets/69937337/32a20e7b-b5c7-44c0-92d1-4ebf48c7f44a)
+
 Using catpuccin mocha theme
 
 ## Waybar:
-![image](https://github.com/Fiwa42/dotfiles/assets/69937337/a2afb17f-b6e9-4978-ba57-5e06670ea4f2)
+![image](https://github.com/Fiwa42/dotfiles/assets/69937337/586ad397-74cc-4f82-a4b5-d8913f175368)
+
