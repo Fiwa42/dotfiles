@@ -10,4 +10,5 @@ Main Monitor:
 ![image](https://github.com/Fiwa42/dotfiles/assets/69937337/586ad397-74cc-4f82-a4b5-d8913f175368)
 
 Second Screen (vertical):
-![image](https://github.com/Fiwa42/dotfiles/assets/69937337/d9eb994b-49b7-4922-afe6-be4d2dfd13d3)
+![image](https://github.com/Fiwa42/dotfiles/assets/69937337/ac0f4362-8e7b-443c-8e47-219db4a252a7)
+
