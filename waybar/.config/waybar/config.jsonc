@@ -16,6 +16,7 @@
 	"memory",
 	"temperature",
 	"custom/fan",
+	"custom/updates",
         "idle_inhibitor",
 	"wireplumber",
         "clock",
@@ -105,6 +106,13 @@
 	"format": "",
 	"on-click":  "bash $HOME/.config/waybar/modules/poweroff.sh",
 	"tooltip": false
+    },
+    "custom/updates":{
+        "format": "{} ",
+        "exec": "bash $HOME/.config/waybar/modules/updates.sh",
+        "exec-if": "[[ $(bash $HOME/.config/waybar/modules/updates.sh) != 0 ]]",
+        "interval": 15,
+        "on-click": "kitty yay"
     }
 },{
     "output": ["DP-3"], //Second Monitor (vertical)
