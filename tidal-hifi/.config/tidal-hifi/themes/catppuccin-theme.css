@@ -1,0 +1,218 @@
+:root {
+         --footer-player-background: #11111B; /* Done: Player Footbar Background */
+         --sidebar-background: #11111B; /* Done: Sidebar Menu Background */
+         --sidebar-hover-background: #62688080; /* Done: Sidebar Hover Background */
+         --sidebar-menu-top-text: #b4befe; /* Done: Active Folder Text and Icon */
+         --sidebar-menu-top-text-hover: #b4befe; /* Done: Active Folder Text and Icon Hover */
+         --sidebar-menu-playlist-text: #b4befe; /* Done: Active Playlist in Folder */
+         --search-background: #11111B; /* Done: Normal Search Background */
+         --search-focus-background: #62688080; /* Done: Focused Search Background */
+         --search-focus-text: #c6d0f5; /* Done: Focused Text Background */
+         --main-background: #1e1e2e; /* Done: Main App Background */
+         --main-navigation-control-background: #11111B; /* Done: Forward and Back Buttons */
+         --main-feed-button-background: #11111B; /* Done: Bell Feed Button */
+         --player-control-background: #b4befe; /* Done: Background of the active Player Control Buttons */
+         --player-control-active-button: #11111B; /* Done: Icon color of the active Player Control Buttons */
+         --player-progress-bar: #b4befe; /* Done: Color of the Progress Bar */
+         --player-volume-bar: #b4befe; /* Done: Color of the Volume Bar */
+         --indicator-hifi-background: #ca9ee6; /* Done: Background of the HIFI indicator */
+         --indicator-hifi-span: #11111B; /* Done: Text Color of the HIFI indicator */
+         --player-control-favorite: #74c7ec; /* Done: Color of the Favorite Icon (Heart) */
+         --right-queue-background: #45475a; /* Done: Color of the Queue Sidebar */
+   --pop-ups: #45475a; /* Done: Color of Pop Ups */
+}
+ .player--gAOQG.notFullscreen--xbpBL {
+         background-color: var(--footer-player-background);
+}
+ .sidebar--jVJai {
+         background-color: var(--sidebar-background);
+         contain: strict;
+         flex-grow: 1;
+         overflow-y: auto;
+}
+ .item--ZrMxl:hover {
+         background-color: var(--sidebar-hover-background);
+}
+ .main--jxfcQ {
+         background-color: var(--main-background);
+}
+ button.button--yO9Cd {
+         background-color: var(--main-navigation-control-background);
+}
+ .player--gAOQG button.withBackground[aria-checked="true"] .icon--dd0Ta {
+         fill: var(--player-control-active-button);
+}
+ .player--gAOQG button.withBackground[aria-checked="true"] {
+         background-color: var(--player-control-background);
+}
+ .activeItem--kFIk0 .activeItem--kFIk0 .playlistItem--mQrxp .section--PSIay.playingItem--eWkYS {
+         color: var(--sidebar-menu-playlist-text);
+}
+ .activeItem--kFIk0 .icon--w7IgY {
+   color: var(--sidebar-menu-top-text);
+}
+ .activeItem--kFIk0:hover .icon--w7IgY {
+   color: var(--sidebar-menu-top-text);
+}
+ .progressBarWrapper--seZqz {
+         color: var(--player-progress-bar);
+}
+ .playbackControls--FhKVf button .tidal-ui__icon {
+         transform: scale(1);
+}
+ .moreContainer--JnBwQ > button:nth-child(1) span {
+         background-color: var(--indicator-hifi-background);
+         color: var(--indicator-hifi-span);
+}
+ .activeItem--kFIk0 {
+         color: var(--sidebar-menu-top-text);
+}
+ .activeItem--kFIk0 .playlistItem--mQrxp {
+         color: var(--sidebar-menu-playlist-text);
+}
+ .folderTitle--XDemO {
+   color: var(--sidebar-menu-top-text);
+}
+ button.feedBell--XaJus {
+         background-color: var(--main-feed-button-background);
+}
+ .favorite--yK4ZG {
+         color: var(--player-control-favorite);
+}
+ .favorite--E0GIx {
+         color: var(--player-control-favorite);
+}
+ svg.accentedIcon--avEQv {
+   color: var(--player-control-favorite);
+ }
+ button.buttonStates--VkrQG:nth-child(3) > div:nth-child(1) > span:nth-child(2) {
+   color: var(--player-control-favorite);
+ }
+ .container--PFTHk {
+         background-color: var(--right-queue-background);
+}
+ .container--cl4MJ {
+         background-color: var(--search-background);
+}
+ .container--cl4MJ:focus-within{
+   background-color: var(--search-focus-background);
+   color: var(--search-focus-text);
+}
+ .searchFieldHighlighted--Fitvs {
+         color: var(--snow-white);
+}
+ .settings-window {
+         color: var(--sidebar-menu-playlist-text);
+}
+ .settings-window__wrapper {
+         background: var(--main-background);
+         box-shadow: inset 0 0 2px 0 var(--main-feed-button-background);
+}
+ .settings-window__close-button:hover {
+         background: var(--main-feed-button-background);
+}
+ .settings input:checked + label {
+         border-bottom: 2px solid var(--player-control-active-button);
+         color: var(--player-control-active-button);
+}
+ .tabs::-webkit-scrollbar-thumb {
+         background-color: #404248;
+         box-shadow: inset 0 0 10px 2px var(--search-background);
+}
+ .group {
+         border-bottom: 1px solid #333;
+}
+ .group__description p {
+         color: var(--sidebar-menu-top-text);
+}
+ .group__description .text-input {
+         border-bottom: solid 1px #333;
+         color: var(--sidebar-menu-top-text);
+}
+ .group__description .text-input:focus {
+         border-color: var(--player-control-active-button);
+         color: var(--sidebar-menu-playlist-text);
+}
+ .switch input:checked + .switch__slider {
+         background-color: var(--player-control-active-button);
+}
+ .switch input:checked + .switch__slider::before {
+         background-color: var(--sidebar-menu-playlist-text);
+}
+ .switch input:focus + .switch__slider {
+         box-shadow: inset 0 0 0 1px var(--player-control-active-button);
+}
+ .switch__slider {
+         background-color: var(--search-background);
+}
+ .switch__slider::before {
+         background-color: var(--sidebar-menu-playlist-text);
+}
+ .textarea {
+         background: var(--search-background);
+         color: var(--sidebar-menu-top-text);
+}
+ .textarea:focus {
+         border-color: var(--player-control-active-button);
+         color: var(--sidebar-menu-playlist-text);
+}
+ .about-section__version a {
+         background-color: #404248;
+         color: var(--player-control-active-button);
+}
+ .about-section__links a {
+         color: var(--sidebar-menu-playlist-text);
+         background-color: var(--search-background);
+}
+ .about-section__links a i {
+         color: var(--sidebar-menu-playlist-text);
+}
+ .about-section__links a:hover {
+         background-color: var(--player-control-favorite);
+}
+ .footer__note {
+         color: var(--sidebar-menu-top-text);
+}
+ .footer__button {
+         background: #404248;
+         color: var(--sidebar-menu-playlist-text);
+}
+ .footer__button:hover {
+         background: #55585f;
+}
+ .file-drop-area {
+         border: 1px dashed var(--sidebar-menu-top-text);
+}
+ .file-drop-area.is-active {
+         background-color: #17171a;
+}
+ .file-btn {
+         background-color: #17171a;
+         border: 1px solid var(--sidebar-menu-top-text);
+}
+ .select-input {
+         border-bottom: solid 1px #333;
+         color: var(--sidebar-menu-top-text);
+}
+ .select-input:focus {
+         border-color: var(--player-control-active-button);
+         color: var(--sidebar-menu-playlist-text);
+}
+ .select-input option {
+         background-color: var(--search-background);
+}
+ .select-input option:disabled {
+         color: var(--sidebar-menu-playlist-text);
+}
+ .contextMenu--a963y {
+   background-color: var(--pop-ups);
+}
+ .subMenu--xEgVU {
+   background-color: var(--pop-ups);
+}
+ .nativeRangeContainer--H2ePf {
+   background-color: var(--pop-ups);
+}
+.nativeRange--u6L4A::-webkit-slider-runnable-track {
+  background: linear-gradient(var(--player-volume-bar), var(--player-volume-bar)) 0 /calc(2px + (var(--val) - var(--min))/(var(--max) - var(--min))*(100% - 2px)) 100% no-repeat var(--wave-color-opacity-contrast-fill-ultra-thin);
+}
