@@ -1,0 +1,8 @@
+require("lua.fiwa.autostart")
+require("lua.fiwa.binds")
+require("lua.fiwa.env")
+require("lua.fiwa.input")
+require("lua.fiwa.look")
+require("lua.fiwa.monitor")
+require("lua.fiwa.programs")
+require("lua.fiwa.windows")
