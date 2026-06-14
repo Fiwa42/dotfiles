@@ -7,6 +7,22 @@
 
 -- Example window rules that are useful
 
+local dp1 = { "1", "2", "3", "4", "5" }
+local dp2 = { "6", "7", "8" }
+local dp3 = { "9", "10" }
+
+for _, ws in ipairs(dp1) do
+    hl.workspace_rule({ workspace = ws, monitor = "DP-1" })
+end
+
+for _, ws in ipairs(dp2) do
+    hl.workspace_rule({ workspace = ws, monitor = "DP-2" })
+end
+
+for _, ws in ipairs(dp3) do
+    hl.workspace_rule({ workspace = ws, monitor = "DP-3" })
+end
+
 local suppressMaximizeRule = hl.window_rule({
     -- Ignore maximize requests from all apps. You'll probably like this.
     name  = "suppress-maximize-events",
@@ -54,18 +70,25 @@ hl.window_rule({
     idle_inhibit = "fullscreen",
 })
 
-local dp1 = { "1", "2", "3", "4", "5" }
-local dp2 = { "6", "7", "8" }
-local dp3 = { "9", "10" }
+hl.window_rule({
+    match = { class = "^discord$" },
+    workspace = "6 silent",
+})
 
-for _, ws in ipairs(dp1) do
-    hl.workspace_rule({ workspace = ws, monitor = "DP-1" })
-end
+hl.window_rule({
+    match = { class = "^steam$" },
+    workspace = "2 silent",
+})
 
-for _, ws in ipairs(dp2) do
-    hl.workspace_rule({ workspace = ws, monitor = "DP-2" })
-end
+hl.window_rule({
+    match = {
+        class = "^steam$",
+        initial_title = "^Friends List$",
+    },
+    workspace = "9 silent",
+})
 
-for _, ws in ipairs(dp3) do
-    hl.workspace_rule({ workspace = ws, monitor = "DP-3" })
-end
+hl.window_rule({
+    match = { class = "^io.github.lullabyX.sone$" },
+    workspace = "9 silent",
+})
